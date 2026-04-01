@@ -1,0 +1,238 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDUVibe</title>
+    <link rel="stylesheet" href="mainpage.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <div class="nav">
+            <div class="innernav">
+            <div class="image">
+                <img src="WE Logo.jpeg" alt="EDUVibe Logo">
+            </div>
+            <div class="list">
+               <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">courses</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Buy</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="login">
+                <button class="login-btn" onclick="location.href='login.html'">Login</button>
+                <button class="cart-btn"><img src="shopping-cart.png" alt="Cart"></button>
+            </div>
+        </div>
+    </header>
+       
+     <main>
+        <div class="landing">
+        <div class="text">
+            <h1>EDU<span>Vibe</span></h1>
+        <h2>learn new skills<br>online with top <br><span>instructors</span></h2>
+            <p>EduVibe is your gateway to smarter learning—where knowledge meets simplicity and style.</p>
+        <p>Learn anytime, grow every day, and vibe with education like never before.</p>
+        <button class="join" onclick="location.href='login.html'">join for free</button>
+        <button class="find courses" id="btn" onclick="location.href='#grid'">find courses</button>
+        <div class="innertext">
+        <p><img src="cap.png" alt="Cap">over 12 million students</p>
+        <p><img src="youtube.png" alt="YouTube">more than 60,000 courses</p>
+        
+    </div>
+    <p class="img"><img src="brainstorming.png" alt="Brainstorming">learn anything online</p> 
+    <!---
+    </div>
+       <div class="images">
+        <img src="pic1.jpeg" alt="Laptop">
+        <img src="pic2.jpeg" alt="Laptop">
+        <img src="pic3.jpeg" alt="Laptop">
+       </div>
+    -->
+      </div>
+    </main>
+    </div>
+
+    <div class="trending">
+        <h2>Trending Courses:</h2>
+        <p>Master the skills that companies are actually hiring for<br>Stay ahead of the curve by learning trending courses that match real-world industry demands. Gain practical skills, boost your confidence, and open doors to <span>better career opportunities</span> .</p>
+        <div class="scroll-wrapper">
+            <div class="items" id="items">
+                <div class="item1" id="item1" style="background:url(marketing.jpg) no-repeat center/cover">
+                    <h6>advertising&marketing</h6><div class="innerdiv">
+                       <p>pinterest drives visual discovery for 600 million monthly users<br>building on amazon RC2 and S3<span></span></p></div>
+                       <button class="enroll">enroll now</button>
+                </div>
+                <div class="item2" id="item2" style="background:url(automotive.jpg) no-repeat center/cover">
+                    <h6>automotive</h6><div class="innerdiv">
+                       <p>Learn the fundamentals of automotive technology, including vehicle systems, maintenance, and modern<br> innovations to build a strong foundation for a career in the automotive industry.<span></span></p></div>
+                       <button class="enroll">enroll now</button>
+                </div>
+                
+                <div class="item3" id="item3" style="background:url(ai.jpg) no-repeat center/cover">
+                     <h6>artificial intelligence</h6><div class="innerdiv">
+                       <p>WRITER is the end-to-end platform for enterprises to build,<br>activate,and supervise AI agesnts<span></span></p></div>
+                       <button class="enroll">enroll now</button>
+                </div>
+                <div class="item4" id="item4" style="background:url(media.jpg) no-repeat center/cover">
+                    <h6>media & entertainment</h6><div class="innerdiv">
+                       <p>Explore the dynamic world of media and entertainment, learning content creation, production, and digital <br>storytelling skills for a creative career.<span></span></p></div>
+                       <button class="enroll">enroll now</button>
+                </div>
+                <div class="item5" id="item5" style="background:url(aerospace.jpg) no-repeat center/cover">
+                     <h6>aerospace & saltellite</h6><div class="innerdiv">
+                       <p>Learn the fundamentals of aerospace and satellite technology, including aircraft systems, space science, <br>and modern innovations shaping the future of aviation and space exploration.<span></span></p></div>
+                       <button class="enroll">enroll now</button>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <a href="#item1"></a>
+                <a href="#item2"></a>
+                <a href="#item3"></a>
+                <a href="#item4"></a>
+                <a href="#item5"></a>
+            </div>
+        </div>
+
+    </div>
+    <div class="grid" id="grid">
+        <h3>explore all courses:</h3>
+        <div class="grid-container">
+            
+            <div class="grid-item">
+                <a href="#"><img src="microchip.png" alt="AI Auto"></a>
+                <h6 class="title">AI automation</h6>
+                <p>rating: 4.5/5</p>
+                <p>price: $49.99</p>
+                <p>mentor: John Doe</p><br>
+                <button class="enroll">enroll now</button>
+            </div>
+               <div class="grid-item">
+                <a href="#"><img src="data.png" alt="AI Auto"></a>
+                <h6 class="title">data science</h6>
+                <p>rating: 4.5/5</p>
+                <p>price: $49.99</p>
+                <p>mentor: John Doe</p><br>
+                <button class="enroll">enroll now</button>
+            </div>
+               <div class="grid-item">
+                <a href="#"><img src="machine-learning.png" alt="AI Auto"></a>
+                <h6 class="title">machine learning</h6>
+                <p>rating: 4.5/5</p>
+                <p>price: $49.99</p>
+                <p>mentor: John Doe</p><br>
+                <button class="enroll">enroll now</button>
+            </div>
+               <div class="grid-item">
+                <a href="#"><img src="customer-service.png" alt="AI Auto"></a>
+                <h6 class="title">IT support</h6>
+                <p>rating: 4.5/5</p>
+                <p>price: $49.99</p>
+                <p>mentor: John Doe</p><br>
+                <button class="enroll">enroll now</button>
+            </div>
+               <div class="grid-item">
+                <a href="#"><img src="advertising.png" alt="AI Auto"></a>
+                <h6 class="title">Digital marketing</h6>
+                <p>rating: 4.5/5</p>
+                <p>price: $49.99</p>
+                <p>mentor: John Doe</p><br>
+                <button class="enroll">enroll now</button>
+            </div>
+               <div class="grid-item">
+                <a href="#"><img src="consulting.png" alt="AI Auto"></a>
+                <h6 class="title">cyber security</h6>
+                <p>rating: 4.5/5</p>
+                <p>price: $49.99</p>
+                <p>mentor: John Doe</p><br>
+                <button class="enroll">enroll now</button>
+            </div>
+               <div class="grid-item">
+                <a href="#"><img src="analytics.png" alt="AI Auto"></a>
+                <h6 class="title">Data analytics</h6>
+                <p>rating: 4.5/5</p>
+                <p>price: $49.99</p>
+                <p>mentor: John Doe</p><br>
+                <button class="enroll">enroll now</button>
+            </div>
+               <div class="grid-item">
+                <a href="#"><img src="cyber-crime.png" alt="AI Auto"></a>
+                <h6 class="title">ethical hacking</h6>
+                <p>rating: 4.5/5</p>
+                <p>price: $49.99</p>
+                <p>mentor: John Doe</p><br>
+                <button class="enroll">enroll now</button>
+            </div>
+        </div>
+    </div>
+
+
+        <footer>
+            <h5>EduVibe – Learn Smarter, Achieve Faster.</h5><br>
+            <p>We provide industry-relevant courses designed to help you build real-world skills and succeed in your career.</p><br>
+            <p>Contact: support@eduvibe.com </p><br>
+            <p>2026 EduVibe | All Rights Reserved</p>
+            <button class="join" onclick="location.href='login.html'">join for free</button>
+        </footer>
+        <script>
+            let items=document.getElementById("items");
+            let sliders=document.querySelectorAll(".items > div");
+            let dots=document.querySelectorAll(".slider-nav a");
+            
+            let index=0;
+            const totalslides=sliders.length;
+
+            function gotoslide(i){
+                items.scrollTo({
+                    left:items.clientWidth * i,
+                    behavior:"smooth"
+                });
+                dots.forEach(dot => dot.classList.remove("active"));
+                dots[i].classList.add("active");
+            }
+            function autoscroll(){
+                index++;
+                if(index>=totalslides){
+                    index=0;
+                }
+                gotoslide(index);
+            }
+            let interval=setInterval(autoscroll,3000);
+ 
+            items.addEventListener("scroll", ()=>{
+                let a= Math.round(items.scrollLeft / items.clientWidth);
+
+                dots.forEach(dot => dot.classList.remove("active"));
+                if(dots[a]){
+                dots[a].classList.add("active");
+                }
+            });
+
+            items.addEventListener("mouseenter",() =>{
+                clearInterval(interval);
+            });
+
+            items.addEventListener("mouseleave", () =>{
+                interval=setInterval(autoscroll,3000)
+            })
+
+            dots.forEach((dot,i) =>{
+                dot.addEventListener("click", () =>{
+                    index=i;
+                    gotoslide(index);
+                })
+            });
+
+            document.getElementById("btn").onclick=function(){
+                document.getElementById("grid").scrollIntoView({behavior:"smooth"});
+            }
+            </script>
+       
+
+</body>
+</html>
