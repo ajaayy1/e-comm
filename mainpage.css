@@ -12,7 +12,7 @@ button{
 }
 .container{
     height: 100vh;
-    background:url("background.jpg") no-repeat;
+    background:url("images/background.jpg") no-repeat;
     background-size:cover;
 }
 header{
