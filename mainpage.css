@@ -28,7 +28,8 @@ header{
     width: 80%;
     display:flex;
     justify-content: space-between;
-    height: 100px;
+    min-height: 100px;
+    height: auto;
     border: 2px solid white;
     border-radius:50px;
     flex-wrap: wrap;
@@ -260,6 +261,7 @@ main{
 }
 .items > div {
     opacity: 0.8;
+    position: relative;
 }
 .items > div p{
     padding: 10px;
@@ -272,7 +274,9 @@ main{
     margin-left:0px;
 }
 .items > div .innerdiv{
-    margin-top: 420px;
+   margin-top: auto;
+    position: absolute;
+    bottom: 40px;
 }
 .items > div h6{
     text-transform: capitalize;
@@ -282,6 +286,8 @@ main{
     font-size: 18px;
     margin-bottom: 20px;
     padding: 5px 20px;
+    
+    
 }
 .items > div button{
     width:150px;
@@ -289,8 +295,9 @@ main{
     height: 40px;
     font-size: 17px;
     text-transform:capitalize;
-
-    
+    bottom:10px;
+    position: absolute;
+    left:3rem;
 }
 .grid{
     display: flex;
@@ -399,15 +406,17 @@ footer button{
         align-items: center;
         text-align: center;
     }
-
-    .text h1 {
-        font-size: 3rem;
-        margin-top: 50px;
+      .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        width: 95%;
     }
-
-    .text h2 {
-        font-size: 1.8rem;
-    }
+ .text h1 {
+    font-size: 2.5rem;
+    margin-top: 80px;
+}
+.text h2 {
+    font-size: 1.5rem;
+}
 
     .nav {
         flex-direction: column;
@@ -416,6 +425,10 @@ footer button{
 
     .login {
         margin-top: 10px;
+    }
+    footer {
+        padding-left: 20px;
+        
     }
 }
 
