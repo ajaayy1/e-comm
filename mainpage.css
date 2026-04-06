@@ -108,7 +108,7 @@ main{
 }
 .text h1{
     font-size: 7rem;
-    margin-top:200px;
+    margin-top:10vh;
 }
 .text h1 span{
     color: #222831;
