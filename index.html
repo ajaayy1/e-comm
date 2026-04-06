@@ -275,60 +275,23 @@
                     document.getElementById("grid").scrollIntoView({behavior:"smooth"});
                 });
 
-           titles = document.querySelectorAll(".title");
-                document.querySelector(".ai").onclick = function() {
-                    titles.forEach(title => {
-                            const card = title.closest(".grid-item");
-                            card.style.width = "350px";
-                             if(title.innerText.toLowerCase().includes("ai")) {
-                             card.style.display = "block";
-                            } else {
-                            card.style.display = "none";
-                             }
-                     });
-                }
-                document.querySelector(".data-science").onclick = function() {
-                    titles.forEach(title => {
-                            const card = title.closest(".grid-item");
-                            card.style.width = "350px";
-                             if(title.innerText.toLowerCase().includes("data science")) {
-                             card.style.display = "block";
-                            } else {
-                            card.style.display = "none";
-                             }
-                     });
-                }
-               
-                    document.querySelector(".machine-learning").onclick = function() {
-                    titles.forEach(title => {
-                            const card = title.closest(".grid-item");
-                            card.style.width = "350px";
-                             if(title.innerText.toLowerCase().includes("machine learning")) {
-                             card.style.display = "block";
-                            } else {
-                            card.style.display = "none";
-                             }
-                     });
-                }
-                        document.querySelector(".it-support").onclick = function() {
-                    titles.forEach(title => {
-                            const card = title.closest(".grid-item");
-                            card.style.width = "350px";
-                             if(title.innerText.toLowerCase().includes("it support")) {
-                             card.style.display = "block";
-                            } else {
-                            card.style.display = "none";
-                             }
-                     });
-                }
-                        document.querySelector(".all").onclick = function() {
-                    titles.forEach(title => {
-                            const card = title.closest(".grid-item");
-                            card.style.width = "350px";
-                             card.style.display = "block";
-                     });
-                }
-                   
+        titles=document.querySelectorAll(".title");
+        filterbutton=document.querySelectorAll(".filter button");
+        filterbutton.forEach(btn =>{
+            btn.addEventListener("click",function(){
+                filter=btn.innerText.toLowerCase();
+                titles.forEach(title =>{
+                    const card=title.closest(".grid-item");
+                    if(filter=="all"||title.innerText.toLowerCase().includes(filter)){
+                        card.style.display="block";
+                    }
+                    else{
+                        card.style.display="none";
+                    }
+                });
+            });
+        });
+            
 
             </script>
        

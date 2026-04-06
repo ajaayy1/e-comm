@@ -347,6 +347,7 @@ main{
     text-align: center;
     background-color: #232323;
     width:100%;
+    max-width: 350px;
     height:auto;
     border-radius:20px;
     text-transform: capitalize;
@@ -399,7 +400,7 @@ footer{
     background-color: #1C1B1D;
     color: orange;
     padding: 20px;
-    padding-left: 220px;
+    padding-left: 5%;
 }
 footer h5{
     font-size: 25px;
@@ -470,6 +471,10 @@ footer button{
 }
 
 @media (max-width: 768px) {
+    .filter {
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
     .text button {
         width: 100%;
         margin-right: 0;
