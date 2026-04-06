@@ -101,8 +101,12 @@
         </div>
 
     </div>
+      <h3>explore all courses:</h3>
+        <div class="filter">
+        <button class="all">all</button><button class="ai">AI</button><button class="data-science">data science</button><button class="machine-learning">machine learning</button><button class="it-support">IT support</button>
+        </div>
     <div class="grid" id="grid">
-        <h3>explore all courses:</h3>
+      
         <div class="grid-container">
             
             <div class="grid-item">
@@ -164,6 +168,38 @@
                <div class="grid-item">
                 <a href="#"><img src="images/cyber-crime.png" alt="AI Auto"></a>
                 <h6 class="title">ethical hacking</h6>
+                <p>rating: 4.5/5</p>
+                <p>price: $49.99</p>
+                <p>mentor: John Doe</p><br>
+                <button class="enroll">enroll now</button>
+            </div>
+             <div class="grid-item">
+                <a href="#"><img src="images/microchip.png" alt="AI Auto"></a>
+                <h6 class="title">AI automation</h6>
+                <p>rating: 4.5/5</p>
+                <p>price: $49.99</p>
+                <p>mentor: John Doe</p><br>
+                <button class="enroll">enroll now</button>
+            </div>
+               <div class="grid-item">
+                <a href="#"><img src="images/data.png" alt="AI Auto"></a>
+                <h6 class="title">data science</h6>
+                <p>rating: 4.5/5</p>
+                <p>price: $49.99</p>
+                <p>mentor: John Doe</p><br>
+                <button class="enroll">enroll now</button>
+            </div>
+               <div class="grid-item">
+                <a href="#"><img src="images/machine-learning.png" alt="AI Auto"></a>
+                <h6 class="title">machine learning</h6>
+                <p>rating: 4.5/5</p>
+                <p>price: $49.99</p>
+                <p>mentor: John Doe</p><br>
+                <button class="enroll">enroll now</button>
+            </div>
+               <div class="grid-item">
+                <a href="#"><img src="images/customer-service.png" alt="AI Auto"></a>
+                <h6 class="title">IT support</h6>
                 <p>rating: 4.5/5</p>
                 <p>price: $49.99</p>
                 <p>mentor: John Doe</p><br>
@@ -238,6 +274,62 @@
                 document.getElementById("courses").addEventListener("click", function(){
                     document.getElementById("grid").scrollIntoView({behavior:"smooth"});
                 });
+
+           titles = document.querySelectorAll(".title");
+                document.querySelector(".ai").onclick = function() {
+                    titles.forEach(title => {
+                            const card = title.closest(".grid-item");
+                            card.style.width = "350px";
+                             if(title.innerText.toLowerCase().includes("ai")) {
+                             card.style.display = "block";
+                            } else {
+                            card.style.display = "none";
+                             }
+                     });
+                }
+                document.querySelector(".data-science").onclick = function() {
+                    titles.forEach(title => {
+                            const card = title.closest(".grid-item");
+                            card.style.width = "350px";
+                             if(title.innerText.toLowerCase().includes("data science")) {
+                             card.style.display = "block";
+                            } else {
+                            card.style.display = "none";
+                             }
+                     });
+                }
+               
+                    document.querySelector(".machine-learning").onclick = function() {
+                    titles.forEach(title => {
+                            const card = title.closest(".grid-item");
+                            card.style.width = "350px";
+                             if(title.innerText.toLowerCase().includes("machine learning")) {
+                             card.style.display = "block";
+                            } else {
+                            card.style.display = "none";
+                             }
+                     });
+                }
+                        document.querySelector(".it-support").onclick = function() {
+                    titles.forEach(title => {
+                            const card = title.closest(".grid-item");
+                            card.style.width = "350px";
+                             if(title.innerText.toLowerCase().includes("it support")) {
+                             card.style.display = "block";
+                            } else {
+                            card.style.display = "none";
+                             }
+                     });
+                }
+                        document.querySelector(".all").onclick = function() {
+                    titles.forEach(title => {
+                            const card = title.closest(".grid-item");
+                            card.style.width = "350px";
+                             card.style.display = "block";
+                     });
+                }
+                   
+
             </script>
        
 
